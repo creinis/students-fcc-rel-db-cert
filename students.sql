@@ -20,7 +20,15 @@ DROP DATABASE students;
 --
 -- Name: students; Type: DATABASE; Schema: -; Owner: freecodecamp
 --
+CREATE DATABASE students WITH 
+    TEMPLATE = template0 
+    ENCODING = 'UTF8' 
+    LC_COLLATE = 'C.UTF-8' 
+    LC_CTYPE = 'C.UTF-8';
 
+ALTER DATABASE students OWNER TO freecodecamp;
+
+\connect students
 
 
 SET statement_timeout = 0;
