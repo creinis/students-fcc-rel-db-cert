@@ -111,7 +111,7 @@ ALTER TABLE public.majors_major_id_seq OWNER TO freecodecamp;
 --
 -- Name: majors_major_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
 --
-
+ALTER SEQUENCE public.majors_major_id_seq OWNED BY public.majors.major_id;
 
 --
 -- Name: students; Type: TABLE; Schema: public; Owner: freecodecamp
