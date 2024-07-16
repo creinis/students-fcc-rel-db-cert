@@ -1,15 +1,15 @@
 ## Database Query Scripts - Students
 
-### Overview
-
-This project consists of Bash scripts designed to extract specific information from a PostgreSQL database (`students`). The scripts utilize `psql` to connect to the database and execute SQL queries, retrieving various data sets related to students, courses, and majors.
-
-### Technologies Used
+##### Technologies Used
 
 <p align="center">
    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="75" height="75" alt="PostgreSQL" style="margin: 10px 15px 0 15px;" />
   <img src="https://img.icons8.com/color/75/000000/console.png" width="75" height="75" alt="Bash" style="margin: 10px 15px 0 15px;" />
 </p>
+
+### Overview
+
+This project consists of Bash scripts designed to extract specific information from a PostgreSQL database (`students`). The scripts utilize `psql` to connect to the database and execute SQL queries, retrieving various data sets related to students, courses, and majors.
 
 ### Scripts
 
