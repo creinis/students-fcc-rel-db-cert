@@ -263,21 +263,20 @@ INSERT INTO public.students VALUES (35, 'Aliya', 'Gulgowski', 42, 2.6);
 INSERT INTO public.students VALUES (36, 'Ana', 'Tupajic', 38, 3.1);
 INSERT INTO public.students VALUES (37, 'Hugo', 'Duran', NULL, 3.8);
 
-
 --
 -- Name: courses_course_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
-
+SELECT pg_catalog.setval('public.courses_course_id_seq', 39, true);
 
 --
 -- Name: majors_major_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
-
+SELECT pg_catalog.setval('public.majors_major_id_seq', 42, true);
 
 --
 -- Name: students_student_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
-
+SELECT pg_catalog.setval('public.students_student_id_seq', 37, true);
 
 --
 -- Name: courses courses_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
