@@ -116,7 +116,16 @@ ALTER SEQUENCE public.majors_major_id_seq OWNED BY public.majors.major_id;
 --
 -- Name: students; Type: TABLE; Schema: public; Owner: freecodecamp
 --
+CREATE TABLE public.students (
+    student_id integer NOT NULL,
+    first_name character varying(50) NOT NULL,
+    last_name character varying(50) NOT NULL,
+    major_id integer,
+    gpa numeric(2,1)
+);
 
+
+ALTER TABLE public.students OWNER TO freecodecamp;
 
 --
 -- Name: students_student_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
