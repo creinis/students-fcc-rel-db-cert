@@ -88,7 +88,12 @@ ALTER TABLE public.majors OWNER TO freecodecamp;
 --
 -- Name: majors_courses; Type: TABLE; Schema: public; Owner: freecodecamp
 --
+CREATE TABLE public.majors_courses (
+    major_id integer NOT NULL,
+    course_id integer NOT NULL
+);
 
+ALTER TABLE public.majors_courses OWNER TO freecodecamp;
 
 --
 -- Name: majors_major_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
