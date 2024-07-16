@@ -11,6 +11,24 @@
 
 This project consists of Bash scripts designed to extract specific information from a PostgreSQL database (`students`). The scripts utilize `psql` to connect to the database and execute SQL queries, retrieving various data sets related to students, courses, and majors.
 
+
+### Usage
+
+These scripts can be used to extract meaningful data insights from the `students` database, providing valuable information related to student performance, course enrollment, and major statistics.
+
+### Installation
+
+To use these scripts, ensure you have `psql` installed and configured to connect to the `students` database. Adjust database credentials (`--username`, `--dbname`, etc.) in the `PSQL` variable within each script as per your environment.
+
+---
+
+#### This project is part of FreeCodeCamp's Back End Development and APIs Projects Certification
+<p align="center">
+<img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" width="250" height="75" alt="freeCodeCamp" style="margin: 0 15px; opacity: 0.6" />
+</p>
+
+---
+
 ### Scripts
 
 The project includes several Bash scripts, each executing a specific SQL query against the `students` database. Below are summaries of each script along with its purpose:
@@ -135,18 +153,3 @@ echo "$($PSQL "SELECT course FROM students INNER JOIN majors_courses USING(major
 ```
 
 - Lists courses with only one student enrolled in alphabetical order.
-
-### Usage
-
-These scripts can be used to extract meaningful data insights from the `students` database, providing valuable information related to student performance, course enrollment, and major statistics.
-
-### Installation
-
-To use these scripts, ensure you have `psql` installed and configured to connect to the `students` database. Adjust database credentials (`--username`, `--dbname`, etc.) in the `PSQL` variable within each script as per your environment.
-
----
-
-#### This project is part of FreeCodeCamp's Back End Development and APIs Projects Certification
-<p align="center">
-<img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" width="250" height="75" alt="freeCodeCamp" style="margin: 0 15px; opacity: 0.6" />
-</p>
