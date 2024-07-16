@@ -287,7 +287,8 @@ ALTER TABLE ONLY public.courses
 --
 -- Name: majors_courses majors_courses_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
 --
-
+ALTER TABLE ONLY public.majors_courses
+    ADD CONSTRAINT majors_courses_pkey PRIMARY KEY (major_id, course_id);
 
 --
 -- Name: majors majors_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
