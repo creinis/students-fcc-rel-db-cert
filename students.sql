@@ -73,7 +73,7 @@ ALTER TABLE public.courses_course_id_seq OWNER TO freecodecamp;
 --
 -- Name: courses_course_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
 --
-
+ALTER SEQUENCE public.courses_course_id_seq OWNED BY public.courses.course_id;
 
 
 --
