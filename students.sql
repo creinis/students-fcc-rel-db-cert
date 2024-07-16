@@ -49,7 +49,13 @@ SET default_table_access_method = heap;
 --
 -- Name: courses; Type: TABLE; Schema: public; Owner: freecodecamp
 --
+CREATE TABLE public.courses (
+    course_id integer NOT NULL,
+    course character varying(100) NOT NULL
+);
 
+
+ALTER TABLE public.courses OWNER TO freecodecamp;
 
 --
 -- Name: courses_course_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
