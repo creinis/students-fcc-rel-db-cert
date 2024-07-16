@@ -148,17 +148,17 @@ ALTER SEQUENCE public.students_student_id_seq OWNED BY public.students.student_i
 --
 -- Name: courses course_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
 --
-
+ALTER TABLE ONLY public.courses ALTER COLUMN course_id SET DEFAULT nextval('public.courses_course_id_seq'::regclass);
 
 --
 -- Name: majors major_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
 --
-
+ALTER TABLE ONLY public.majors ALTER COLUMN major_id SET DEFAULT nextval('public.majors_major_id_seq'::regclass);
 
 --
 -- Name: students student_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
 --
-
+ALTER TABLE ONLY public.students ALTER COLUMN student_id SET DEFAULT nextval('public.students_student_id_seq'::regclass);
 
 --
 -- Data for Name: courses; Type: TABLE DATA; Schema: public; Owner: freecodecamp
