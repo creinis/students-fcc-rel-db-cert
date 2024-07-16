@@ -75,11 +75,15 @@ ALTER TABLE public.courses_course_id_seq OWNER TO freecodecamp;
 --
 ALTER SEQUENCE public.courses_course_id_seq OWNED BY public.courses.course_id;
 
-
 --
 -- Name: majors; Type: TABLE; Schema: public; Owner: freecodecamp
 --
+CREATE TABLE public.majors (
+    major_id integer NOT NULL,
+    major character varying(50) NOT NULL
+);
 
+ALTER TABLE public.majors OWNER TO freecodecamp;
 
 --
 -- Name: majors_courses; Type: TABLE; Schema: public; Owner: freecodecamp
