@@ -281,7 +281,8 @@ SELECT pg_catalog.setval('public.students_student_id_seq', 37, true);
 --
 -- Name: courses courses_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
 --
-
+ALTER TABLE ONLY public.courses
+    ADD CONSTRAINT courses_pkey PRIMARY KEY (course_id);
 
 --
 -- Name: majors_courses majors_courses_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
