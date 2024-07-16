@@ -124,18 +124,26 @@ CREATE TABLE public.students (
     gpa numeric(2,1)
 );
 
-
 ALTER TABLE public.students OWNER TO freecodecamp;
 
 --
 -- Name: students_student_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
 --
+CREATE SEQUENCE public.students_student_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
 
+
+ALTER TABLE public.students_student_id_seq OWNER TO freecodecamp;
 
 --
 -- Name: students_student_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
 --
-
+ALTER SEQUENCE public.students_student_id_seq OWNED BY public.students.student_id;
 
 --
 -- Name: courses course_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
